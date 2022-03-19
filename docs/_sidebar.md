@@ -1,7 +1,16 @@
-<!-- TODO: Complete with your own sidebar structure and enable sidebar in index.html - or delete this file. -->
-- [Home](/#docsifyjs-template)
-- [Fizz]()
-- [Buzz]()
-- Foo
-    * [Bar]()
-    * [Baz]()
+<!-- docs/_sidebar.md -->
+
+
+* [⭐Home](./)
+* [💡 Liên hệ](./contact/index)
+
+* [Tutorials](./tutorials/index)
+  * [Tomcat](./tutorials/tomcat/index)
+  * [Cloud](./tutorials/cloud/index)
+  * [Java](./tutorials/java/index)
+
+* **Thủ thuật**
+  * [Bộ sưu tập ACII đẹp](./tips-tricks/ascii-symbols.md)
+
+
+
