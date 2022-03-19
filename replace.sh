@@ -8,9 +8,9 @@ cd docs
 
 ## MODIFY THESE WITH YOUR VALUES
 
-MY_TITLE='Foo Bar'
-MY_SUBTITLE='Foos the bar all the buzz'
-MY_USERNAME='MyGitHubUsername'
+MY_TITLE='Hiếu''s share'
+MY_SUBTITLE='Trang chia sẻ của HIếu'
+MY_USERNAME='buiduchieuvnu'
 MY_PROJECT_SLUG='foo-bar'
 
 ## DO NOT MODIFY AFTER THE LINE ABOVE
