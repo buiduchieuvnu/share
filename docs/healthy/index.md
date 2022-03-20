@@ -1,6 +1,6 @@
 
-# Tutorials for every technologist
+# Topic chia sẻ kinh nghiệm về sức khỏe
 
-Learn about all these great technologies:
+## Covid 19
 
-[Covid-19](./tomcat/index.md)
+[Kinh nghiệm xử lý Covid-19](./healthy/covid-19.md)
