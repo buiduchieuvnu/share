@@ -4,10 +4,8 @@
 * [⭐Home](./)
 * [💡 Liên hệ](./contact/index)
 
-* [Tutorials](./tutorials/index)
-  * [Tomcat](./tutorials/tomcat/index)
-  * [Cloud](./tutorials/cloud/index)
-  * [Java](./tutorials/java/index)
+* **Developer**
+  * [Cài đặt SSL miễn phí - Centos 7 - Nginx](developer/certbot.md)
 
 * **Thủ thuật**
   * [Bộ sưu tập ACII đẹp](./tips-tricks/ascii-symbols.md)
