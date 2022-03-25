@@ -5,7 +5,7 @@
 * [💡 Liên hệ](./contact/index)
 
 * **Developer**
-  * [Cài đặt SSL miễn phí - Centos 7 - Nginx](developer/certbot.md)
+  * [Cài đặt SSL miễn phí - Centos 7 - Nginx](developer/certbot-centos7-nginx.md)
 
 * **Thủ thuật**
   * [Bộ sưu tập ACII đẹp](./tips-tricks/ascii-symbols.md)
