@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title></title>
+        <link>undefined</link>
+        <description>undefined</description>
+        <lastBuildDate>Sat, 20 Aug 2022 03:11:13 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[Thiết kế DB Phòng khám]]></title>
+            <guid>f9138e15c26047699f550e9a1450bfe1</guid>
+            <pubDate>Sat, 30 Jul 2022 08:42:17 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="phạm-vi-yêu-cầu">Phạm vi yêu cầu</h1>
+<h2 id="i-danh-mục">I. Danh mục</h2>
+<ul>
+<li>User-Role: ALL</li>
+<li>Yêu cầu:</li>
+</ul>
+<blockquote>
+<p>Cung cấp dữ liệu danh mục phục vụ các chức năng nghiệp vụ của dự án<br />
+Cho phép import / export dữ liệu từ file excel</p>
+</blockquote>
+<h3 id="danh-mục-khác">Danh mục khác</h3>
+<blockquote>
+<p>Bảng danh mục tổng hợp chứa hệ thống mã phục vụ cho các chức năng nghiệp vụ</p>
+</blockquote>
+<p><img src="/_resources/84369f24da4d44d6b023c8f835767d96.png" /></p>
+<h3 id="danh-mục-hồ-sơ-quan-hệ">Danh mục hồ sơ, quan hệ</h3>
+<blockquote>
+<p>Bảng danh mục hồ sơ (profile) phục vụ quản lý thông tin chung của nhân sự (bệnh nhân, nhân viên, bác sĩ, vv..)</p>
+</blockquote>
+<p><img src="/_resources/b9f184851a7a4127a874ab2d2033280c.png" /></p>
+<h3 id="dm-bệnh-lý">DM Bệnh lý</h3>
+<blockquote>
+<p>Table: dm_benhly<br />
+Mục đích: danh mục bệnh lý, theo ICD 10 và bệnh lý phòng khám tự nhập riêng</p>
+</blockquote>
+<h3 id="dm-dịch-vụ">DM Dịch vụ</h3>
+<blockquote>
+<p>Table: dm_dichvu<br />
+Mục đích: Danh mục dịch vụ phòng khám khai báo phục vụ chỉ định dịch vụ trong khám bệnh, kết hợp với bảng giá để tính tiền trong hóa đơn</p>
+</blockquote>
+<h3 id="dm-dịch-vụ-2">DM Dịch vụ</h3>
+<blockquote>
+<p>Table: dm_dichvu<br />
+Mục đích: Danh mục dịch vụ phòng khám khai báo phục vụ chỉ định dịch vụ trong khám bệnh, kết hợp với bảng giá để tính tiền trong hóa đơn</p>
+</blockquote>
+<h3 id="dm-khoa-phòng">DM Khoa phòng</h3>
+<blockquote>
+<p>Table: dm_khoaphong<br />
+Mục đích: DM khoa phòng do phòng khám khai báo dựa trên tổ chức địa điểm thực tế của phòng khám, phục vụ bác sĩ đăng ký lịch trực, bệnh nhân đăng ký khám, chuyển khám trong quá trình khám, vv..</p>
+</blockquote>
+<h3 id="dm-nhân-viên">DM Nhân viên</h3>
+<blockquote>
+<p>Table: dm_nhanvien<br />
+Mục đích: DM nhân viên, phục vụ phòng khám quản lý nhân viên của mình: quản lý, bác sĩ, lễ tân, dược sĩ, thu ngân, kế toán, bảo vệ, vv...</p>
+</blockquote>
+<h3 id="dm-bệnh-nhân">DM Bệnh nhân</h3>
+<blockquote>
+<p>Table: dm_benhnhan<br />
+Mục đích: DM Bệnh nhân, phục vụ quản lý danh mục bệnh nhân của phòng khám, thông tin bệnh nhân có thể đến từ nhiều nguồn: đến trực tiếp phòng khám, đăng ký hẹn khám từ xa, dữ liệu bệnh nhân tiềm năng do đối tác cung cấp import vào phần mềm để khai thác</p>
+</blockquote>
+<p><img src="/_resources/b5fa6f293f42431d9a3a4adbedf5c5f5.png" /></p>
+<h3 id="dm-tỉnh-thành-quận-huyện-phường-xã">DM Tỉnh-thành, quận-huyện, phường-xã</h3>
+<blockquote>
+<p>Table: dm_tinhthanh, dm_quanhuyen, dm_phuongxa<br />
+Mục đích: Danh mục lấy theo dữ liệu chuẩn của Tổng cục thống kê phục vụ xác định địa chỉ của hồ sơ cá nhân, phiếu khám</p>
+</blockquote>
+<p><img src="/_resources/e39e723b30f548ebbbd503f98fb7acdf.png" /></p>
+<h3 id="dm-bảng-giá">DM Bảng giá</h3>
+<blockquote>
+<p>Table: dm_banggia<br />
+Mục đích: Danh mục bảng giá, phục vụ khai báo (lần đầu) giá trị tiền áp dung cho đối tượng (vật tư, dịch vụ, chi phí khác, vv..), điều chỉnh giá cho các đối tượng, giúp quản lý được lịch sử giá của các đối tượng mang giá trị tiền trong phòng khám, kết hợp với các chứng từ xuất-nhập, thu-chi, chỉ định dịch vụ để lập hóa đơn cho nhà cung cấp, đối tác, bệnh nhân</p>
+</blockquote>
+<p><img src="/_resources/06aa3304e2db416dafeb7622dbb706ea.png" /></p>
+<hr />
+<div class="jop-noMdConv"></div>
+<h2 id="ii-hệ-thống">II. Hệ thống</h2>
+<ul>
+<li>User-Role: Product Owner (<strong>PO</strong>), HelpDesk (<strong>HD</strong>), Quản lý khòng khám (<strong>CM</strong>)</li>
+</ul>
+<blockquote>
+<p><em><strong>Yêu cầu:</strong></em><br />
+- Quản lý tài khoản của phòng khám<br />
+- Phân quyền truy cập chức năng, tính năng của phần mềm cho các nhân viên trong phòng khám<br />
+- Thiết lập các cấu hình cho phần mềm của phòng khám của mình<br />
+- Có thể xem nhật ký các sự kiện của phòng khám của mình trong 01 tháng gần nhất:<br />
+- Lịch sử đăng nhập<br />
+- Lịch sử sửa đổi dữ liệu<br />
+- Lịch sử hủy hóa đơn, vv..<br />
+- Lịch sử lỗi</p>
+</blockquote>
+<h3 id="nhật-ký-hệ-thống">Nhật ký hệ thống</h3>
+<blockquote>
+<p><strong>Table</strong>: ht_log<br />
+Mục đích: Ghi nhận nhật ký các sự kiện của hệ thống:<br />
+- INFO: Đăng nhập thành công, cập nhật danh mục: bảng giá, nhân viên, dịch vụ, lập chứng từ, xuất hoa đơn, vv...<br />
+- WARING: Đăng nhập thất bại, hủy khám, hủy hóa đơn, cập nhật vai trò cho nhân viên vv...<br />
+- ERROR: Các lỗi hệ thống</p>
+</blockquote>
+<p><img src="/_resources/694a7f2f257d44d08f842c7eaf0dc14f.png" /></p>
+<h2 id="iii-tiếp-nhận-khám">III. Tiếp nhận khám</h2>
+<ul>
+<li>User-Role: Lễ tân (<strong>REC</strong>)</li>
+<li><em><strong>Yêu cầu:</strong></em>
+<ul>
+<li>Quản lý bệnh nhân: bệnh nhân mới, bệnh nhân tái khám, bệnh nhân hẹn khám online</li>
+<li>Cho phép tạo phiếu khám (lần khám) cho bệnh nhân từ các nguồn: mới đến, tái khám, hẹn khám online</li>
+<li>Phân loại đối tượng bệnh nhân theo từng lần khám: Thường, Thân thiết, bảo hiểm, vv..</li>
+<li>Quản lý, sắp xếp lịch trực bác sĩ</li>
+<li>Quản lý sắp xếp lịch hẹn của bệnh nhân: tiếp nhận lịch, gọi điện chăm sóc, xác nhận lịch hẹn</li>
+<li>Quản lý Sổ khám bệnh của bệnh nhân: Tất cả các thông tin khám bệnh của bệnh nhân theo lần khám
+<ul>
+<li>Lịch sử điều trị</li>
+<li>Lịch sử chẩn đoán</li>
+<li>Lịch sử sử dụng thuốc</li>
+<li>Hóa đơn điều trị</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="iv-khám-bệnh">IV. Khám bệnh</h2>
+<ul>
+<li>User-Role: Bác sĩ (<strong>DOC</strong>)</li>
+<li><em><strong>Yêu cầu:</strong></em>
+<ul>
+<li>Cho phép đăng ký lịch trực khám theo ngày, tuần, tháng, báo nghỉ, vv..</li>
+<li>Bác sĩ  quản lý được danh sách hẹn khám, chờ khám, đang khám, đã khám của mình trong phòng khám</li>
+<li>Cung cấp chức năng khám bệnh cho bác sĩ:
+<ul>
+<li>Hỏi bệnh, chẩn đoán bệnh lý</li>
+<li>Chỉ định dịch vụ</li>
+<li>Kê thuốc xuất trong phòng khám, đơn thuốc mua ngoài</li>
+<li>Xử trí</li>
+<li>Hẹn tái khám</li>
+<li>vv..</li>
+</ul>
+</li>
+<li>Thống kê dữ liệu khám cá nhân của bác sĩ trong phòng khám:
+<ul>
+<li>Lượt khám theo: ngày, tuần, tháng, năm</li>
+<li>Số lượng chỉ định: dịch vụ, vật tư</li>
+<li>Bệnh nhân tái khám, bệnh nhân hẹn khám thường xuyên, vv...</li>
+</ul>
+</li>
+<li>Tiện ích Cá nhân hóa dữ liệu cá nhân phục vụ gợi ý nhanh khi khám: gói khám mẫu (chỉ định dịch vụ, đơn thuốc), đơn thuốc mẫu, gói dịch vụ mẫu, vv..</li>
+</ul>
+</li>
+</ul>
+<h2 id="v-vật-tư-thuốc">V. Vật tư - thuốc</h2>
+<ul>
+<li>User-Role: Dược sĩ (thủ kho) (<strong>STO</strong>)</li>
+<li><em><strong>Yêu cầu:</strong></em>
+<ul>
+<li>Người dùng quản lý được nghiệp vụ quản lý kho - vật tư:
+<ul>
+<li><strong>Nhập</strong>: Quản lý lô nhập, chứng từ nhập vật tư</li>
+<li><strong>Xuất</strong>: Quản lý  chứng từ xuất vật tư</li>
+<li><strong>Kiểm</strong>: Quản lý biên bản kiểm kê, cập nhật tình trạng kho vật tư</li>
+<li><strong>Tồn</strong>: Hệ thống tự động tính toán, cập nhật tình trạng tồn kho phục vụ chức năng nghiệp vụ truy vấn nhanh tồn kho của từng vật tư thời điểm hiện tại.
+<ul>
+<li>Hệ thống có tính năng tự động (định kỳ) hoặc thủ công (người dùng chủ động) chốt tồn đầu kỳ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Phiếu phát thuốc / vật tư (chứng từ xuất) cho người bệnh theo đơn bác sĩ kê</li>
+</ul>
+</li>
+</ul>
+<h2 id="v-hóa-đơn">V. Hóa đơn</h2>
+<ul>
+<li>User-Role: Kế toán (<strong>ACC</strong>), Thu ngân (<strong>CAS</strong>)</li>
+<li><em><strong>Yêu cầu:</strong></em>
+<ul>
+<li>Người dùng có thể quản lý các hóa đơn phát sinh của phòng khám:
+<ul>
+<li>HĐ Chi:
+<ul>
+<li>HĐ Nhập thuốc, vật tư</li>
+<li>HĐ mua sắm</li>
+<li>HĐ thanh toán hợp đồng thuê mặt bằng,</li>
+<li>vv, ...</li>
+</ul>
+</li>
+<li>HĐ Thu:
+<ul>
+<li>Hóa đơn khám của bệnh nhân theo từng lần khám</li>
+</ul>
+</li>
+<li>Các hóa đơn có thể số hóa, scan, vv... lưu trữ lại trên phần mềm phục vụ tra cứu</li>
+</ul>
+</li>
+<li>Người dùng có thể tra cứu, lọc, xem lại, in lại, thống kê, vv.. theo nhiều tiêu chí (khoảng thời gian)</li>
+</ul>
+</li>
+</ul>
+<h2 id="vi-báo-cáo-thống-kê">VI. Báo cáo - Thống kê</h2>
+<ul>
+<li>User-Role: CM, REC, DOC, STO, ACC, CAS</li>
+<li><em><strong>Yêu cầu:</strong></em>
+<ul>
+<li>Người dùng với từng vai trò được cung cấp các báo cáo, thống kê theo nhu cầu</li>
+<li><strong>CM</strong>
+<ul>
+<li>Báo cáo thu - chi toàn bộ phòng khám</li>
+<li>Báo cáo tình hình tăng trưởng bệnh nhân</li>
+<li>Dashboard dành cho quản lý</li>
+</ul>
+</li>
+<li><strong>REC</strong>
+<ul>
+<li>Báo cáo tiếp nhận khám bệnh</li>
+</ul>
+</li>
+<li><strong>DOC</strong>
+<ul>
+<li>Báo cáo lượt khám</li>
+<li>Báo cáo công khám</li>
+<li>Báo cáo sử dụng vật tư</li>
+</ul>
+</li>
+<li><strong>STO</strong>
+<ul>
+<li>Báo cáo xuất - nhập - tồn</li>
+<li>Biên bản kiểm kê</li>
+</ul>
+</li>
+<li><strong>ACC, CAS</strong>
+<ul>
+<li>Báo cáo thu chi</li>
+<li>Dashboard tài chính</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="vii-bệnh-nhân">VII. Bệnh nhân</h2>
+<ul>
+<li>User-Role: Bệnh nhân (<strong>PAT</strong>)</li>
+<li><em><strong>Yêu cầu:</strong></em>
+<ul>
+<li>Cho phép bệnh nhân đăng nhập sử dụng gmail hoặc facebook cá nhân</li>
+<li>Với những bệnh nhân đã có thông tin gmail hoặc facebook do lễ tân cập nhật có thể xác thực ngay mà không cần đăng ký</li>
+<li>Bệnh nhân có thể đăng ký lịch hẹn, xác nhận lịch hẹn, xem lại lịch sử khám bệnh qua sổ khám bệnh cá nhân</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>
